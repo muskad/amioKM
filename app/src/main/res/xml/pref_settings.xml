@@ -1,0 +1,69 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <MultiSelectListPreference
+        android:defaultValue="@android:array/config_keySystemUuidMapping"
+        android:entries="@array/list_sensors"
+        android:entryValues="@array/list_sensors"
+        android:key="list_sensor_selected_pref"
+        android:title="Sélection des capteurs" />
+
+    <PreferenceCategory
+        android:title="Notifications Push">
+
+        <com.project.amio.projetamio.NumberPickerPreference
+            android:key="start_hour_notif_push"
+            android:title="Heure début"
+            android:defaultValue="19" />
+
+        <com.project.amio.projetamio.NumberPickerPreference
+            android:key="end_hour_notif_push"
+            android:title="Heure fin"
+            android:defaultValue="23" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Email">
+
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="mail_pref"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Ajoute de l'adresse email"
+            android:inputType="textEmailAddress"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Notification Email Semaine">
+
+        <com.project.amio.projetamio.NumberPickerPreference
+            android:key="start_hour_notif_mail_week"
+            android:title="Heure début"
+            android:defaultValue="23" />
+
+        <com.project.amio.projetamio.NumberPickerPreference
+            android:key="end_hour_notif_mail_week"
+            android:title="Heure fin"
+            android:defaultValue="6" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Notification Email Week-end">
+
+        <com.project.amio.projetamio.NumberPickerPreference
+            android:key="end_hour_notif_mail_weekend"
+            android:title="Heure début"
+            android:defaultValue="19" />
+
+        <com.project.amio.projetamio.NumberPickerPreference
+            android:key="end_hour_notif_mail_weekend"
+            android:title="Heure fin"
+            android:defaultValue="23" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

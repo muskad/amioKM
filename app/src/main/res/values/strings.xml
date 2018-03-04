@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ProjetAMIO</string>
+    <string name="action_settings">Settings</string>
+    <string name="refresh">Refresh</string>
+    <string name="title_activity_settings">Settings</string>
+    <string-array name="list_sensors">
+        <item>Capteur 1</item>
+        <item>Capteur 2</item>
+    </string-array>
+
+
+</resources>
